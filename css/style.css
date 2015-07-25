@@ -1,17 +1,19 @@
-body {
+html {
   padding: 0.5%;
-  background-image: url("../img/background.png"); }
+  background-image: url("../img/background.png");
+  box-sizing: border-box; }
 
-h1, h3 {
-  text-align: center;
-  font-family: "buena-park"; }
-
-h6 {
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-family: "buena-park"; }
 
 p {
-  font-family: "capitolium-news-2"; }
+  font-family: "leitura-news"; }
+
+.related-stories {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/background.png");
+  padding: 0.5rem;
+  border-top: 0.2rem black solid; }
 
 #masthead {
   border: 0.2rem black solid;
@@ -19,47 +21,67 @@ p {
   #masthead img {
     width: 100%; }
 
-#one {
-  width: 60%;
+#date {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/background.png");
+  color: #f1e9e0;
+  padding: 0.6rem;
+  padding-top: 0.9rem;
+  margin: auto auto;
+  border: 0.5rem solid #f1e9e0; }
+
+#date-wrapper {
+  border: 0.2rem solid black;
+  padding: 0.5; }
+
+.main {
+  width: 55%;
   margin: 1rem;
-  padding: 0.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
   display: inline-block;
+  float: left;
   background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/background.png"); }
-  #one #video {
+  .main #video {
     z-index: 100;
     position: absolute;
     margin-top: -29.5rem;
     margin-left: 8rem; }
-  #one #frame {
+  .main #frame {
     z-index: 0;
-    position: relative;
-    margin-left: 2rem; }
-    #one #frame img {
+    position: relative; }
+    .main #frame img {
       height: 580px;
       width: 740px; }
-  #one #one-text p {
+  .main #main-text p {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2; }
 
-#two {
-  width: 35%;
-  display: inline-block;
-  margin: 1rem;
-  padding: 0.5rem;
-  float: right;
-  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/background.png"); }
-
-#three, #four {
+.column {
   width: 30%;
   display: inline-block;
   margin: 1rem;
+  margin-top: 2rem;
+  float: right;
+  padding: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/background.png"); }
+
+#secondary-one {
+  width: 35%;
+  float: right;
+  padding: 1rem; }
+
+#secondary-two {
+  width: 55%;
+  float: right;
+  padding: 1rem; }
+
+.secondary {
+  display: inline-block;
+  margin: 1rem;
   padding: 0.5rem;
   background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/background.png"); }
-  #three p, #four p {
+  .secondary p {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2; }
-
-#two, #four {
-  display: none; }
