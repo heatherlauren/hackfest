@@ -91,16 +91,19 @@ p {
     -moz-column-count: 2;
     column-count: 2; }
 
+@media screen and (min-width: 1310px) {
+  #secondary-one {
+    width: 35%; }
+
+  #secondary-two {
+    width: 55%; } }
 @media screen and (max-width: 1310px) {
   #secondary-one {
     width: 30%; }
     #secondary-one p {
       -webkit-column-count: 1;
       -moz-column-count: 1;
-      column-count: 1; } }
-@media screen and (min-width: 980px) {
-  #secondary-one {
-    width: 35%; }
+      column-count: 1; }
 
   #secondary-two {
     width: 55%; } }
