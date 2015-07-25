@@ -6,6 +6,10 @@ h1, h3 {
   text-align: center;
   font-family: "buena-park"; }
 
+h6 {
+  text-align: center;
+  font-family: "buena-park"; }
+
 p {
   font-family: "capitolium-news-2"; }
 
@@ -56,3 +60,6 @@ p {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2; }
+
+#two, #four {
+  display: none; }
